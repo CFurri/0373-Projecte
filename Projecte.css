@@ -1,9 +1,11 @@
+/*CSS
 
+ */
 
 li {
     display: inline;
     padding: 0px;
-    background-color: #C4DFDF;
+    background-color: #F5F7FA;
 
     font-size: 20px;
     margin: 40px;
@@ -11,14 +13,14 @@ li {
 }
 
 a{
-    color: black;
+    color: #4A5B6A;
     font-family: Verdana;
     font-weight: bold;
     text-decoration: none;
 }
 
 li:hover {
-    background-color: white;
+    background-color: #B0B8C1;
     font-size: 18px
 
 }
@@ -34,8 +36,25 @@ form input{
 }
 
 footer{
-    color: aqua;
+    color: #4A5B6A;
     background-color: lightgrey;
+}
+
+form{
+    color: #4A5B6A;
+    font-family: Verdana;
+    font-weight: bold;
+}
+h1{
+    color: #4A5B6A;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 50px;
+
+    /* Input formulari */
+}
+input{
+    font-size: 30px;
 }
 
 
