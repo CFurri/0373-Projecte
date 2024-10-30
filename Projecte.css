@@ -1,6 +1,12 @@
 /*CSS
 
  */
+a{
+    color: #4A5B6A;
+    font-family: Verdana;
+    font-weight: bold;
+    text-decoration: none;
+}
 
 li {
     display: inline;
@@ -10,13 +16,6 @@ li {
     font-size: 20px;
     margin: 40px;
     border: 20px;
-}
-
-a{
-    color: #4A5B6A;
-    font-family: Verdana;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 li:hover {
@@ -56,6 +55,9 @@ h1{
 input{
     font-size: 30px;
 }
+
+
+
 
 
 
