@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Ferreteria</title>
     <link rel="stylesheet" href="Projecte.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 <body>
@@ -45,18 +47,20 @@ fer-hi un menú desplegable amb 4 títols
 <section>
     <article>
 
-        <img src="Jardineria.jpg" height="400" width="760"/>
+        <img src="Jardineria.jpg" class="imatge" />
 
-        <img src="eines.jpeg" height="183" width="275"/>
+        <img src="eines.jpeg" class="imatge" />
 
-        <img src="epis.jpeg" height="155" width="324"/>
+        <img src="epis.jpeg" class="imatge"/>
 
-        <img src="herramientas.png" height="277" width="794"/>
+        <img src="herramientas.png" class="imatge"/>
 
     </article>
+
 </section>
 
     <h1>Formulari</h1>
+    <div>
     <form>
         <label for="nom">Nom:</label>
         <input type="text" id="nom"><br>
@@ -69,28 +73,42 @@ fer-hi un menú desplegable amb 4 títols
 
         <label for="Pregunta">Pregunta:</label><br>
         <input type="text" id="Pregunta"><br>
-
     </form>
+    </div>
 
-<aside>OFERTA DE LA SETMANA:
-Olla a pressió
-    Preu:
-    Afegir a la cistella (i que es pugui clicar)
+<aside>
 
+    <h1 class="titol">Oferta de la setmana</h1>
+    <h5 class="producte">Olla a pressió</h5>
+    <h7 class="preu">Preu: 39,99$</h7>
+    <h7 class="cistella">Afegir a la cistella</h7>
 
 </aside>
+    <h1>Les millors ferreteries d'Osona</h1>
+    <table>
+        <tr class="titol">
+            <th>Ferreteria</th>
+            <th>Ubicació</th>
+            <th>Puntuació</th>
+        </tr>
+        <tr>
+            <th>Ferreteria Castell</th>
+            <th>Tona</th>
+            <th>10 de 10</th>
+        </tr>
+        <tr>
+            <th>Ferreteria Furriols</th>
+            <th>Vic</th>
+            <th>10 de 10</th>
+        </tr>
+    </table>
 </main>
 
 <footer>
-    <h4>EMPRESA</h4>
-    <div><text>"Qui som</text></div>
-
-    <h4>POLÍTICA DE PRIVACITAT</h4>
-
-    <h4>CONSELLS</h4>
-
-    <img src="newlogo.webp" height="200" width="200"/>
-
+    <div><h4 class="empresa">EMPRESA</h4></div>
+    <div><h4 class="politica">POLÍTICA DE <br> PRIVACITAT</h4></div>
+    <div><h4 class="consells">CONSELLS</h4></div>
+    <div><img src="newlogo.webp" class="footer-logo" height="200" width="200"/></div>
 </footer>
 
 </body>

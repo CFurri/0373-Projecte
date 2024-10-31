@@ -56,6 +56,44 @@ input{
     font-size: 30px;
 }
 
+.nav_producte{
+    float: right;
+}
+h1{
+    text-align: center;
+}
+.empresa{
+    text-align: center;
+
+}
+.politica{
+    text-align: left;
+
+}
+.consells{
+    text-align: right;
+
+}
+
+.footer-logo{
+    display:block;
+    margin: 0 auto;
+}
+
+.imatge{
+    width:100%;
+    margin:25px;
+}
+
+@media (min-width: 600px){
+    .imatge{
+        width: 25%;
+    }
+}
+
+
+
+
 
 
 
