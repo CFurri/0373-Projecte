@@ -3,90 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <title>Ferreteria</title>
-    <link rel="stylesheet" href="Projecte.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="Projecte.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
 
 </head>
 <body>
 <!--WEB HEADER -->
 
-    <header class="header">
-    <a href="https://www.optimusferreteria.com/" class="logo">
-        <img src="" alt=""><img src="Logotip FF150anys.png" height="154.8" width="480"/>
-    </a>
+<header class="cap">
+    <div>
+        <a href="https://www.optimusferreteria.com/" class="logo">
+            <img src="Logotip FF150anys.png" height="154.8" width="480"/>
+        </a>
+    </div>
 
 
     <!--NAVEGADOR -->
-<div>
-<nav>
-    <ul>
-        <li><a href="https://www.ferreteriafurriols.cat/marques/">Catàlegs</a></li>
-        <li><a href="https://www.ferreteriafurriols.cat/contacte/">Contacte</a></li>
-        <li><a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fferreteriafurriols%2F&is_from_rle">Xarxes Socials</a></li>
-        <br>
-        <li><a href="https://www.google.com/maps?ll=41.940406,2.2527&z=14&t=m&hl=es&gl=US&mapclient=embed&cid=12259139215464147019">Localització</a></li>
-        <li><a href="https://www.ferreteriafurriols.cat/empresa-2/empresa/">Qui som</a></li>
-    </ul>
-</nav>
-</div>
+    <div>
+    <nav>
+        <ul>
+         <li><a href="https://www.ferreteriafurriols.cat/marques/">Catàlegs</a></li>
+            <li><a href="https://www.ferreteriafurriols.cat/contacte/">Contacte</a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fferreteriafurriols%2F&is_from_rle">Xarxes Socials</a></li>
+            <li><a href="https://www.google.com/maps?ll=41.940406,2.2527&z=14&t=m&hl=es&gl=US&mapclient=embed&cid=12259139215464147019">Localització</a></li>
+         <li><a href="https://www.ferreteriafurriols.cat/empresa-2/empresa/">Qui som</a></li>
+        </ul>
+    </nav>
+    </div>
 
     <!--CERCA -->
+    <aside>
     <div class="nav_producte">
         <input type="text" placeholder="Busca el teu producte...">
     </div>
-fer-hi un menú desplegable amb 4 títols
+    </aside>
+
 
 </header>
 
 <main>
 
-    <!--SECTION -->
+    <!--ELS PRODUCTES -->
 
-<h1>Els productes:</h1>
+<h1 class="titol_productes">Els productes:</h1>
 <section>
     <article>
+        <div>
+            <img src="Jardineria.jpg" class="imatge" />
+        </div>
+        <div class="nom_productes">
+            <p>Jardineria</p>
+        </div>
 
-        <img src="Jardineria.jpg" class="imatge" />
+        <div>
+            <img src="eines.jpeg" class="imatge" />
+        </div>
+        <div class="nom_productes">
+            <p>Eines</p>
+        </div>
 
-        <img src="eines.jpeg" class="imatge" />
 
-        <img src="epis.jpeg" class="imatge"/>
+        <div>
+            <img src="epis.jpeg" class="imatge"/>
+        </div>
+        <div class="nom_productes">
+            <p>EPIS</p>
+        </div>
 
-        <img src="herramientas.png" class="imatge"/>
+
+        <div class="front">
+            <img src="herramientas.png" class="imatge"/>
+        </div>
+        <div class="nom_productes">
+            <p>Maquinaria</p>
+        </div>
+
+
 
     </article>
 
 </section>
 
-    <h1>Formulari</h1>
+    <!--FORMULARI -->
+    <section class="formulari">
+    <div class="titol_form">
+        <h1 class="titol_form">Fes la teva comanda</h1>
+    </div>
     <div>
     <form>
         <label for="nom">Nom:</label>
-        <input type="text" id="nom"><br>
+        <input type="text" id="nom" placeholder="Nom"><br>
 
-        <label for="mail">E-mail:</label>
-        <input type="text" id="mail"><br>
+        <label for="adreça">Adreça:</label>
+        <input type="text" id="adreça" placeholder="Adreça"><br>
 
         <label for="telf">Telèfon de contacte:</label>
-        <input type="text" id="telf"><br>
+        <input type="text" id="telf" placeholder="Telèfon de contacte"><br>
 
-        <label for="Pregunta">Pregunta:</label><br>
-        <input type="text" id="Pregunta"><br>
+        <label class="pregunta" >Observacions:</label><br>
+        <textarea class="input_observacions" name="" id="" placeholder="Comentaris i/o observacions"></textarea>
     </form>
     </div>
+    </section>
 
-<aside>
 
-    <h1 class="titol">Oferta de la setmana</h1>
-    <h5 class="producte">Olla a pressió</h5>
-    <h7 class="preu">Preu: 39,99$</h7>
-    <h7 class="cistella">Afegir a la cistella</h7>
+    <!--OFERTA -->
+    <section class="oferta">
+        <div><h1 class="titol_animat">Oferta de la setmana</h1></div>
+        <div><img class="foto.olla" src="olla.jpeg" height="225" width="225"/></div>
+        <div><h5 class="producte">Olla a pressió</h5></div>
+        <div><h7 class="preu">Preu: 39,99$</h7></div>
+        <div>
+            <button type="submit">Agegir a la cistella</button></div>
 
-</aside>
-    <h1>Les millors ferreteries d'Osona</h1>
-    <table>
-        <tr class="titol">
+    </section>
+
+    <!--TAULA -->
+    <section>
+    <h1 class="titol_taula" >Les millors ferreteries Optimus</h1>
+    <table class="taula">
+        <tr>
             <th>Ferreteria</th>
             <th>Ubicació</th>
             <th>Puntuació</th>
@@ -102,6 +141,7 @@ fer-hi un menú desplegable amb 4 títols
             <th>10 de 10</th>
         </tr>
     </table>
+    </section>
 </main>
 
 <footer>
@@ -110,6 +150,8 @@ fer-hi un menú desplegable amb 4 títols
     <div><h4 class="consells">CONSELLS</h4></div>
     <div><img src="newlogo.webp" class="footer-logo" height="200" width="200"/></div>
 </footer>
+
+
 
 </body>
 </html>

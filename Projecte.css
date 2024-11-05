@@ -1,6 +1,20 @@
-/*CSS
+/*CSS */
 
- */
+/*BODDY*/
+body, html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/*HEADER*/
+header{
+    display:block;
+
+}
+/*LOGO*/
+.cap{
+    width: 100%;
+    text-align: left;
+}
 a{
     color: #4A5B6A;
     font-family: Verdana;
@@ -8,88 +22,216 @@ a{
     text-decoration: none;
 }
 
-li {
-    display: inline;
-    padding: 0px;
-    background-color: #F5F7FA;
+.logo img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+}
 
+/*NAV*/
+nav {
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    display:block;
+    text-align: center;
+}
+
+nav ul li {
+    display: block;
+    padding: 10px 15px;
+    background-color: #F5F7FA;
     font-size: 20px;
     margin: 40px;
-    border: 20px;
+    margin: 10px auto;
+    width: fit-content; /* L'amplada s'ajusta al contingut */
+    border: 1px solid black;
 }
 
-li:hover {
-    background-color: #B0B8C1;
-    font-size: 18px
-
-}
-body{
-    background-color: #F8F6F4;
-}
-form label{
-    font-size: 45px;
-
-}
-form input{
-    padding: 10px;
+nav ul li:hover {
+    background-color: darkseagreen;
+    color:white;
 }
 
-footer{
-    color: #4A5B6A;
-    background-color: lightgrey;
-}
 
-form{
-    color: #4A5B6A;
-    font-family: Verdana;
-    font-weight: bold;
-}
-h1{
-    color: #4A5B6A;
-    font-family: Verdana;
-    font-weight: bold;
-    font-size: 50px;
-
-    /* Input formulari */
-}
-input{
-    font-size: 30px;
-}
-
+/*Buscador:*/
 .nav_producte{
-    float: right;
-}
-h1{
-    text-align: center;
-}
-.empresa{
-    text-align: center;
-
-}
-.politica{
-    text-align: left;
-
-}
-.consells{
-    text-align: right;
-
-}
-
-.footer-logo{
     display:block;
-    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    width: 100%;
 }
 
+input[type=text]{
+    width: 80%; /* Amplada del buscador */
+
+    padding: 10px; /* Espai interior */
+    font-family: Arial, sans-serif; /* Tipus de lletra */
+    font-size: 16px; /* Mida de la lletra */
+    color: #333; /* Color del text */
+    background-color: #f8f8f8; /* Color de fons del buscador */
+    border: 1px solid #ccc; /* Bord de l'input */
+    border-radius: 5px; /* Cantons arrodonits */
+    outline: none; /* Elimina l'outline per fer clic */
+    transition: border-color 0.3s; /* Transició suau per al color del bord */
+}
+
+.input_observacions{
+    width: 100%; /* Amplada del buscador */
+    max-width: 400px; /* Amplada màxima */
+    padding: 10px; /* Espai interior */
+    font-family: Arial, sans-serif; /* Tipus de lletra */
+    font-size: 16px; /* Mida de la lletra */
+    color: #333; /* Color del text */
+    background-color: #f8f8f8; /* Color de fons del buscador */
+    border: 1px solid #ccc; /* Bord de l'input */
+    border-radius: 5px; /* Cantons arrodonits */
+    outline: none; /* Elimina l'outline per fer clic */
+    resize: none;
+}
+
+
+/*ELS PRODUCTES*/
+.titol_productes{
+    color: #4A5B6A;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
 .imatge{
     width:100%;
     margin:25px;
 }
 
-@media (min-width: 600px){
-    .imatge{
+.nom_productes{
+    color: #4A5B6A;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+}
+
+@media (min-width: 600px) {
+    .imatge {
         width: 25%;
     }
 }
+
+
+/* FORMULARI */
+.label{
+    font-size: 20px;
+    border: 3px solid #555;
+    font-size: 8px;
+
+}
+form input{
+    padding: 10px;
+    font-size: 30px;
+}
+
+
+form{
+    color: #4A5B6A;
+    font-family: Verdana;
+    font-weight: bold;
+    background-color: lightgrey;
+    width: 100%;
+}
+
+.titol_form{
+    color: #4A5B6A;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*OFERTA*/
+.oferta{
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+/*títol-oferta-animat*/
+@keyframes canviColor {
+    0% {
+        color: #ff5733; /* Color inicial */
+    }
+    33% {
+        color: #33ff57; /* Segon color */
+    }
+    66% {
+        color: #3357ff; /* Tercer color */
+    }
+    100% {
+        color: #ff5733; /* Torna al color inicial */
+    }
+}
+
+.titol_animat {
+    font-size: 2em; /* Ajusta la mida del títol */
+    animation: canviColor 3s infinite; /* Aplica l'animació */
+    text-align: center; /* Centra el text */
+    margin: 10px 0; /* Espaiat superior i inferior */
+}
+
+
+/*TAULA*/
+.titol_taula{
+    color: #4A5B6A;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+table{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: Arial;
+    color: black;
+    background: rgba(169, 139, 139, 0.58);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.9px);
+    -webkit-backdrop-filter: blur(13.9px);
+    border: 1px solid rgba(169, 139, 139, 0.3);
+}
+/* Footer */
+
+footer{
+    color: #4A5B6A;
+    background-color: lightgrey;
+    text-align: center;
+}
+footer .fotter-content{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+footer .footer-content div {
+    display: inline-block;
+    width: 33%; /* Divideix l'amplada en tres parts iguals */
+    vertical-align: top;
+}
+
+
+.footer-logo {
+    display: block;
+    margin: 0 auto;
+    display: inline-flex;
+}
+
+
+
+
+
+
+
+
 
 
 
