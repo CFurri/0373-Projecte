@@ -21,11 +21,20 @@ a{
     font-weight: bold;
     text-decoration: none;
 }
+.divlogofurri{
+    display:flex;
+    justify-content:center;
+}
+.logofurri{
+    max-width: 100%;
+    height: auto
+}
 
 .logo img {
     max-width: 100%;
     width: 300px;
     height: auto;
+    cursor: pointer;
 }
 
 /*NAV*/
@@ -45,7 +54,7 @@ nav ul li {
     font-size: 20px;
     margin: 40px;
     margin: 10px auto;
-    width: fit-content; /* L'amplada s'ajusta al contingut */
+    width: fit-content;
     border: 1px solid black;
 }
 
@@ -65,30 +74,29 @@ nav ul li:hover {
 }
 
 input[type=text]{
-    width: 80%; /* Amplada del buscador */
-
-    padding: 10px; /* Espai interior */
-    font-family: Arial, sans-serif; /* Tipus de lletra */
-    font-size: 16px; /* Mida de la lletra */
-    color: #333; /* Color del text */
-    background-color: #f8f8f8; /* Color de fons del buscador */
-    border: 1px solid #ccc; /* Bord de l'input */
-    border-radius: 5px; /* Cantons arrodonits */
-    outline: none; /* Elimina l'outline per fer clic */
-    transition: border-color 0.3s; /* Transició suau per al color del bord */
+    width: 80%;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
 }
 
 .input_observacions{
-    width: 100%; /* Amplada del buscador */
-    max-width: 400px; /* Amplada màxima */
-    padding: 10px; /* Espai interior */
-    font-family: Arial, sans-serif; /* Tipus de lletra */
-    font-size: 16px; /* Mida de la lletra */
-    color: #333; /* Color del text */
-    background-color: #f8f8f8; /* Color de fons del buscador */
-    border: 1px solid #ccc; /* Bord de l'input */
-    border-radius: 5px; /* Cantons arrodonits */
-    outline: none; /* Elimina l'outline per fer clic */
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
     resize: none;
 }
 
@@ -103,20 +111,15 @@ input[type=text]{
 }
 .imatge{
     width:100%;
-    margin:25px;
+    margin-bottom: 0px;
+    margin-top: 25px;
 }
 
 .nom_productes{
     color: #4A5B6A;
     font-family: Arial, sans-serif;
     text-align: center;
-
-}
-
-@media (min-width: 600px) {
-    .imatge {
-        width: 25%;
-    }
+    border-bottom: 30px;
 }
 
 
@@ -147,35 +150,65 @@ form{
     font-weight: bold;
     font-size: 30px;
     text-align: center;
+    margin-top: 100px;
 }
 
 /*OFERTA*/
 .oferta{
     text-align: center;
     font-family: Arial, sans-serif;
+    padding-top: 50px;
 }
 /*títol-oferta-animat*/
 @keyframes canviColor {
     0% {
-        color: #ff5733; /* Color inicial */
+        color: #ff5733;
     }
     33% {
-        color: #33ff57; /* Segon color */
+        color: #33ff57;
     }
     66% {
-        color: #3357ff; /* Tercer color */
+        color: #3357ff;
     }
     100% {
-        color: #ff5733; /* Torna al color inicial */
+        color: #ff5733;
     }
 }
 
 .titol_animat {
-    font-size: 2em; /* Ajusta la mida del títol */
-    animation: canviColor 3s infinite; /* Aplica l'animació */
-    text-align: center; /* Centra el text */
-    margin: 10px 0; /* Espaiat superior i inferior */
+    font-size: 2em;
+    animation: canviColor 3s infinite;
+    text-align: center;
+    margin: 10px 0;
 }
+button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.preu {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: black;
+    border: 50px;
+
+}
+.producteolla{
+    font-size:30px;
+    color: #555555;
+    font-weight: bold;
+    border: 50px;
+    margin-top: 5px;
+}
+
+
 
 
 /*TAULA*/
@@ -185,19 +218,27 @@ form{
     font-weight: bold;
     font-size: 30px;
     text-align: center;
+    padding-top: 50px;
 }
 table{
+    border-radius: 15px;
     text-align: center;
     margin: 0 auto;
     font-size: 20px;
     font-family: Arial;
-    color: black;
+    color: #333333;
     background: rgba(169, 139, 139, 0.58);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(13.9px);
     -webkit-backdrop-filter: blur(13.9px);
     border: 1px solid rgba(169, 139, 139, 0.3);
+}
+/*aside*/
+.optimuslogo{
+    text-align: center;
+    display: block;
+    padding: 20px;
 }
 /* Footer */
 
@@ -206,28 +247,48 @@ footer{
     background-color: lightgrey;
     text-align: center;
 }
-footer .fotter-content{
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+
+
+
+@media (min-width: 600px) {
+    .imatge {
+        width: 200px;
+        display: block;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .cap{
+        width: 100%;
+        padding: 10px 50px;
+        display: block;
+
+    }
+    nav {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .formulari form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .divlogofurri {
+        float: left;
+        width: 30%;
+    }
 
 }
-footer .footer-content div {
-    display: inline-block;
-    width: 33%; /* Divideix l'amplada en tres parts iguals */
-    vertical-align: top;
-}
-
-
-.footer-logo {
-    display: block;
-    margin: 0 auto;
-    display: inline-flex;
-}
-
-
-
-
 
 
 
